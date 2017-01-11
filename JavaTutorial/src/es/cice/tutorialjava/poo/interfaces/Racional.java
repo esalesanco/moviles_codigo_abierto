@@ -63,4 +63,33 @@ public class Racional implements Comparable {
 			
 		return 0;
 	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if ((obj == (Object) null) ||
+			!(obj instanceof Racional) ||
+			(((Racional) obj).getDenominador() == 0)) {
+			return false;
+		}
+
+		Racional r = (Racional) obj;
+		
+		return ((numerador*r.getDenominador() == denominador*r.getNumerador())? true: false);
+	}
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		int result = 17;
+
+		result = 31 * result + numerador;
+		result = 31 * result + denominador;
+		
+		return result;
+
+//		return Math.abs(numerador*10000000/denominador);
+	}
+	
 }
