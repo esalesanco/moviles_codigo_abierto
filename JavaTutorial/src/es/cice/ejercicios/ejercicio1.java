@@ -6,7 +6,7 @@ public class ejercicio1 {
 		
 		String[] nombres = {
 			"Jean Carlos",
-			"Ángel",
+			"Angel",
 			"Javier",
 			"Rosa",
 			"Jose Antonio",
