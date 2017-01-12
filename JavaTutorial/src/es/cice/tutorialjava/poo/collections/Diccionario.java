@@ -46,11 +46,12 @@ public class Diccionario {
 
 		for (Character key : keys) {
 			List<String> list = buffer.get(key);
-			System.out.println("[" + key + "]:");
+			System.out.print("[" + key + "]: [");
 
 			for (String str : list) {
-				System.out.println(str);
+				System.out.print(" " + str);
 			}
+			System.out.println(" ]");
 		}
 	}
 }

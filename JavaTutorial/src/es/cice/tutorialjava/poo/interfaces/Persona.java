@@ -1,10 +1,10 @@
 package es.cice.tutorialjava.poo.interfaces;
 
-public class Racional implements Comparable {
+public class Persona implements Comparable {
 	private int numerador;
 	private int denominador;
 
-	public Racional(int numerador, int denominador) {
+	public Persona(int numerador, int denominador) {
 		super();
 		this.numerador = numerador;
 		this.denominador = denominador;
@@ -47,12 +47,12 @@ public class Racional implements Comparable {
 	public int compareTo(Object other) throws ComparationException {
 		// TODO Auto-generated method stub
 		if ((other == (Object) null) ||
-			!(other instanceof Racional) ||
-			(((Racional) other).getDenominador() == 0)) {
+			!(other instanceof Persona) ||
+			(((Persona) other).getDenominador() == 0)) {
 			throw new ComparationException("El elemento comparado debe ser un objeto de tipo Racional");
 		}
 		
-		Racional r = (Racional) other;
+		Persona r = (Persona) other;
 		
 		if (numerador*r.getDenominador() > denominador*r.getNumerador()) {
 			return 1;
@@ -69,12 +69,12 @@ public class Racional implements Comparable {
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
 		if ((obj == (Object) null) ||
-			!(obj instanceof Racional) ||
-			(((Racional) obj).getDenominador() == 0)) {
+			!(obj instanceof Persona) ||
+			(((Persona) obj).getDenominador() == 0)) {
 			return false;
 		}
 
-		Racional r = (Racional) obj;
+		Persona r = (Persona) obj;
 		
 		return ((numerador*r.getDenominador() == denominador*r.getNumerador())? true: false);
 	}
