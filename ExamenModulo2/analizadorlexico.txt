@@ -1,0 +1,6 @@
+Primera: línea para analizar léxicamente.
+Segunda: línea para analizar.
+Tercera:
+
+Esta línea no es ni la primera, ni la segunda, ni la tercera, ni la 4. Es la quinta.
+Por último, esta otra línea.
